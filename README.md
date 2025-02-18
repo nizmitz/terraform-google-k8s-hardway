@@ -12,7 +12,7 @@ Example
 module "k8s-hardway" {
   source  = "nizmitz/k8s-hardway/google"
   version = "1.0.0"
-  project_id = "agnes-learning-project-3"
+  project_id = "your-project-id"
 }
 ```
 
