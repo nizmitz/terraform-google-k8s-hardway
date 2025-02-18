@@ -5,6 +5,17 @@ This module is created due to my frustration on creating new infrastructure when
 This module all the necessary resources for the project, although there is one big catch and this is assuming you are like me using a free tier of GCP.
 The catch being that this will use amd64 architecture instead of the latest which use arm. you can change the instance type and os type but the GCP free tier doesn't have the quota for arm 
 
+
+to use the module you can use as follow
+Example
+```
+module "k8s-hardway" {
+  source  = "nizmitz/k8s-hardway/google"
+  version = "1.0.0"
+  project_id = "agnes-learning-project-3"
+}
+```
+
 References:
 https://github.com/kelseyhightower/kubernetes-the-hard-way
 
